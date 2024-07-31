@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script src="array.js"></script>
+</head>
+<body>
+    <br><br><hr>
+
+ <script>
+
+    var arr1 = []
+    var range = parseInt(prompt("enter the  array range"))
+
+    for(var i=0 ; i<range ; i++)
+   {
+     arr1[i]=prompt(parseInt(`enter ${i} elentet:-`))
+   }
+
+   for(var i=0;i<range;i++)
+   {
+    // console.log(arr1[i])
+   }
+//    document.write(arr1)
+
+
+var max =arr1[0] ;
+
+
+for(var i =1 ; i<range ; i++)
+ {
+    if (max  < arr1[i])
+    {
+        max = arr1[i]
+    }
+ }
+
+//  document.write(arr1)
+ document.write(`max number :- ${max} `)
+
+ </script>
+  
+    
+</body>
+</html>
